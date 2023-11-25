@@ -1,4 +1,4 @@
-let specifiedValue = 10000000000.00; // 指定值，您可以根据需要修改这个数值
+let specifiedValue = 1100000.00; // 指定值，您可以根据需要修改这个数值
 
 let response = JSON.parse($response.body);
 
