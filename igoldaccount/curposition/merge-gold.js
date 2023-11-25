@@ -1,5 +1,5 @@
 let customMergeBal = 500.0163; // 克数
-let goldPricePerGram = 454; // 每克黄金价格
+let goldPricePerGram = 454.35; // 每克黄金价格
 let benefitRate = 0.1145141; // 利润率
 
 let response = JSON.parse($response.body);
