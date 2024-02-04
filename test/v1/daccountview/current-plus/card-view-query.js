@@ -13,15 +13,4 @@ if (response["bizResult"] && response["bizResult"]["data"] && response["bizResul
     }
 }
 
-if (response["bizResult"] && response["bizResult"]["data"] && response["bizResult"]["data"]["cornucopiaResult"] && response["bizResult"]["data"]["cornucopiaResult"]["data"]) {
-    let cornucopiaData = response["bizResult"]["data"]["cornucopiaResult"]["data"];
-    cornucopiaData["sumAsset"] = specifiedValue;
-
-    for (let key in cornucopiaData["cornucopiaMap"]) {
-        if (cornucopiaData["cornucopiaMap"].hasOwnProperty(key)) {
-            cornucopiaData["cornucopiaMap"][key]["asset"] = specifiedValue;
-        }
-    }
-}
-
 $done({body: JSON.stringify(response)});
